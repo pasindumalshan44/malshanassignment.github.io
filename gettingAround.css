@@ -1,0 +1,207 @@
+*{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body{
+	background-image:url("Images/background1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+}
+
+div.title {
+	font-size: 50px;
+	margin: auto;
+	width: 400px;
+	padding: 10px;
+	text-shadow: 2px 2px 4px #ffffff;
+}
+
+/*nav bar css*/
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0, 0.4);
+  position: sticky;
+  top: 0;
+}
+
+li.navli {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+/*section begins here*/
+.scene{
+	width: auto; 
+	height:auto;
+	max-width:100%;
+	padding: 5px;
+	padding-top: 20px;
+	
+}
+
+
+.section{
+	padding-top: 10px;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+.subSection1{
+	padding-bottom: 40px;
+	border-radius: 50px;
+	background-color:rgba(255,255,255, 0.4);
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom:10px;
+}
+
+.subSection2{
+	border-radius: 50px;
+	background-color:rgba(255,255,255, 0.4);
+	padding-bottom: 40px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom:10px;
+
+}
+
+.subSection3{
+	border-radius: 50px;
+	background-color:rgba(255,255,255, 0.4);
+	padding-bottom: 40px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom:10px;
+}
+
+
+
+.sectionTopic{
+	text-shadow: 2px 2px 4px #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 30px;
+	margin: auto;
+	width: 100%;
+	
+}
+
+.homeParagraph{
+	padding-left:50px;
+	padding-right:50px;
+	font-size:15px;
+	font-family: Arial, Helvetica, sans-serif;
+	height:100%;
+	text-align:justify;
+}
+
+.ImgColumn {
+	box-sizing: border-box;
+	float: left;
+	width: 33%;
+	padding: 5px;
+}
+
+.ImgRow::after {
+	box-sizing: border-box;
+	content: "";
+	clear: both;
+	display: table;
+	position:center;
+}
+
+
+#tips{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+
+/*footer css begins here*/
+
+footer{
+	display:block;
+	background-color: #618685;
+	padding-top: 20px;
+	width: 100%;
+	height: 130px;
+	text-align:center;
+	font-size:15px;
+	
+}
+
+@media all and (max-width: 1024px){
+	div.title {
+		width: 350px;
+	}
+	.homeParagraph{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.section{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.subSection1,.subSection2,.subSection3 {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+}
+
+@media all and (max-width: 667px){
+	div.title {
+		font-size: 30px;
+		width: 210px;
+	}
+	.ImgColumn {
+    width: 100%;
+  }
+	li.navli {
+		font-size:12px;
+	}
+	.homeParagraph{
+		font-size:12px;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.section{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.subSection1,.subSection2,.subSection3 {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.para{
+		font-size:12px;
+	}
+	footer{
+		height: 100px;
+		font-size:12px;
+	}
+}

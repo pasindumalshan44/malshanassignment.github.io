@@ -1,0 +1,607 @@
+body{
+	background-color:#f5fcf5;
+}
+
+*{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* navigation bar css starts here*/
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #618685;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #3b3a30;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 172px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.title {
+	font-size: 50px;
+	margin: auto;
+	width: 255px;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+@media all and (max-width: 1210px){
+	div.title{
+	font-size:45px;
+	}
+}
+
+@media all and (max-width: 1090px){
+	div.title{
+	font-size:35px;
+	width: 180px;
+	}
+}
+@media all and (max-width: 856px){
+	div.title{
+	font-size:35px;
+	}
+}
+@media all and (max-width: 700px){
+	div.title{
+	font-size:30px;
+	width: 150px;
+	}
+	
+	li a, .dropbtn {
+		font-size:14px;
+	}
+	
+}
+@media all and (max-width: 380px){
+	div.title{
+	font-size:30px;
+	width: 235px;
+	}
+}
+@media all and (max-width: 700px){
+	nav ul{
+    margin-right: 0px;
+    float: left;
+	width:100%;
+  }
+ li,dropbtn{
+    text-align: center;
+    float: none;
+	width:100%;
+  }
+  .dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #618685;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color:white;
+  }
+  .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {background-color:  #3b3a30;}
+}
+
+/* navigation bar css ends here*/
+
+/* main image*/
+img.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height:100%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  padding-top: 20px;
+  
+}
+
+/* section begins here*/
+.scene{
+	width: auto; 
+	height:auto;
+	width:100%;
+	padding: 5px;
+	padding-top: 20px;
+	
+}
+
+
+.section{
+	padding-top: 10px;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+section{
+	
+	padding-bottom: 40px;
+	border: 2px solid red;
+	border-radius: 25px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom:10px;
+
+}
+
+.sectionTopic{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 30px;
+	margin: auto;
+	width: 100%;
+	
+}
+
+.homeParagraph{
+	padding-left:50px;
+	padding-right:50px;
+	font-size:15px;
+	font-family: Arial, Helvetica, sans-serif;
+	height:100%;
+	text-align:justify;
+}
+
+.ImgColumn {
+	box-sizing: border-box;
+	float: left;
+	width: 33%;
+	padding: 5px;
+	transition: transform .2s;
+}
+
+.ImgColumn:hover{
+	  transform: scale(1.5);
+}
+
+
+.ImgRow::after {
+	box-sizing: border-box;
+	content: "";
+	clear: both;
+	display: table;
+	position:center;
+}
+
+/*Attraction page css begins here */
+.attractionContent{
+	text-align:center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+
+.tbl{
+	font-size:15px;
+	margin: 20px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 95%;
+	margin-left:auto; 
+  margin-right:auto;
+  overflow-x:auto;
+}
+
+#tbl, caption {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tbl td, #tbl th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #f2f2f2;}
+
+#tbl tr:hover {background-color: #ddd;}
+
+#tbl th {
+  display: table-cell;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ABB2B9 ;
+  color: white;
+}
+
+#tfoot td{
+text-align:center;
+background-color:#ddd;
+}
+
+@media all and (max-width: 700px){
+.attractionContent{
+		font-size:13px;
+	}
+	.tbl{
+		font-size:13px;
+	}
+}
+/*accommodation page css begins here*/
+
+.column {
+  float: left;
+  width: 32.4%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 110%;
+  margin: 5px;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+.row{
+	margin-top:30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.content{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:justify;
+}
+
+#contentHead{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.hotel{
+	height:100%;
+	width:100%;
+	position:center;
+	transition: transform .2s;
+}
+
+.hotel:hover{
+	  transform: scale(1.5);
+}
+
+
+.url{
+	padding-top:20px;
+	text-align:center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*transport css begins here*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+background-color: #618685;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top:10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row1{
+margin-top:30px;
+
+}
+
+.row2{
+margin-top:30px;
+
+}
+
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btnrow{
+  content: "";
+  display: table;
+  clear: both;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+}
+.btn{
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.tcolumn {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  height: 300px; 
+  margin:10px;
+  border: 2px solid #C1C8E4;
+  
+}
+
+.label{
+float:left;
+width:50%;
+}
+
+@media screen and (max-width: 1025px) {
+	.btn{
+	margin-right:10px;
+	margin-left:10px;
+	}
+	.tcolumn {
+	  width: 43%;
+	}
+	.container {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+  .tcolumn {
+    width: 90%;
+  }
+}
+
+
+
+@media all and (max-width: 667px){
+  .col-25, .col-75{
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=submit] {
+  margin-top: 10px;
+  }
+  .btn{
+	margin-top:10px;
+	}
+}
+
+/*contact us css begins here*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+   box-sizing: border-box;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+   box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+   box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+   box-sizing: border-box;
+}
+
+.container {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  padding-left:150px;
+  padding-right:150px;
+  margin-bottom: 20px;
+   box-sizing: border-box;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+   box-sizing: border-box;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+   box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+   box-sizing: border-box;
+}
+
+.contact{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:50px;
+	text-align:center;
+	padding-top:20px;
+	
+}
+@media screen and (max-width: 1090px) {
+ .contact{
+	  font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 856px) {
+ .contact{
+	  font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+	 box-sizing: border-box;
+  }
+  .container{
+  padding-left:20px;
+  padding-right:20px;
+  }
+  .contact{
+	  font-size: 30px;
+  }
+}
+
+/*footer css begins here*/
+
+footer{
+	display:block;
+	background-color: #618685;
+	padding-top: 20px;
+	width: 100%;
+	height: 130px;
+	text-align:center;
+	
+}
+@media all and (max-width: 1024px){
+	.column {
+  width: 48.5%;
+  padding:5px;
+}
+	.hotel:hover{
+	  transform: none;
+}
+}
+@media all and (max-width: 667px){
+	img.main {
+		width:90%;
+	}
+	
+	.section{
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+	.homeParagraph{
+	padding-left:10px;
+	padding-right:10px;
+	}
+	.ImgColumn {
+    width: 100%;
+  }
+  .ImgColumn:hover{
+	  transform: none;
+	}
+	.column {
+		width:98%;
+	}
+	.hotel:hover{
+	  transform: none;
+	}
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SKYTRIPS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<header>
+          <div class="title">SKYTRIPS</title>
+	</header>
+	
+<!-- Navigation bar starts here -->
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Attractions.html">Attractions</a></li>
+  <li class="dropdown">
+    <a href= "Accommodation.html" class="dropbtn">Accommodation</a>
+    <div class="dropdown-content">
+     <a href="gettingAround.html" target="_blank">Getting Around</a>
+      <a href="tips.html" target="_blank">Travel Tips</a>
+    </div>
+  </li>
+  <li><a href="Transport.html">Transport</a></li>
+  <li><a href="ContactUs.html">Contact us</a></li>
+</ul>
+
+<!-- End Of the navigation bar -->
+
+<div class="container1">
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="taxiType">Taxi type</label>
+    </div>
+    <div class="col-75">
+      <select id="taxiType" name="taxiType" onchange="taxiTypeChanged()">
+		<option value="">Select Taxi type</option>
+        <option value="Tuk Tuk">Tuk Tuk</option>
+        <option value="Mini Car">Mini Car</option>
+        <option value="Luxury Car">Luxury Car</option>
+		<option value="Luxury Van">Luxury Van</option>
+		<option value="Luxury Bus">Luxury Bus</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fuel">Fuel Efficiency</label>
+    </div>
+    <div class="col-75">
+      <select  name="fuel" id="Fuel" onchange="fuelEfficiencyChanged()">
+	  <option value="">Select Fuel Efficiency</option>
+        <option value="High">High</option>
+        <option value="Medium">Medim(default)</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="stay">Stay</label>
+    </div>
+    <div class="col-75">
+      <select name="stay" id="Stay" onchange="stayChanged()">
+	  <option value="One Way">Select Stay Type</option>
+        <option value="One Way">One Way</option>
+        <option value="Two Way">Two Way</option>
+        <option value="Over Night">Over night</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Distance</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Distance" name="distance" placeholder="Distance" onchange="currentDistanceChanged(this.value)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Pick Up Location</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="location" name="location" placeholder="Pick Up Location">
+    </div>
+  </div>
+  
+  <div class="btnrow">
+	<input class="btn" type="submit" value="Order Favourite" onclick="getFromFavourite()">
+	<input class="btn" type="submit" value="Add to Favourite"  onclick="addFavourite()"> 
+	<input class="btn" type="submit" value="Reserve" onclick="reserve()">  
+    <input class="btn" type="submit" value="Add Order" onclick="addOrder()">
+
+  </div>
+ 
+</div>
+
+<div class="row">
+
+  <div class="tcolumn">
+  <h3 class=".">current reservation</h3>
+	  <label class = "label" for="currentTaxi" id="currentTaxi">Current Taxi : -</label>
+	  <label class = "label" for="currentTaxi" id="fuelEfficiency">Fuel Efficiency : -</label>
+	  <label class = "label" for="currentTaxi" id="StayCurrent">Stay : -</label>
+	  <label class = "label"  id="currentDistance">Distance : 0</label>
+	  <label class = "label" for="costofcurrent" id="currentCost">cost of current Taxi : 0</label>  
+  </div>
+  
+  <div class="tcolumn">
+	<h3>overall reservation</h3>
+		<label class = "label" for="overallOrder">All Taxi(s)</label>
+		<label class = "label" id="lbl1">.</label>
+		<label class = "label" for="overallOrder">Overall Cost</label>
+		<label class = "label" id="lbl2"> 0 </label>
+		<label class = "label" for="overallOrder">Total Distance</label>
+		<label class = "label" id="lbl3"> 0 </label>
+  </div>
+  
+</div>
+
+
+
+<!-- Footer begins here-->
+<footer>
+	<div class="footer">
+		SKYTRIPS<br>
+		No.456,<br>
+		Colombo 12.<br><br>
+		Email : <a href="mailto:skytrips@gmail.com">skytrips@gmail.com</a><br>
+		Contact no: +94757808454
+	</div>
+
+</footer>
+
+<!-- Footer ends here-->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
